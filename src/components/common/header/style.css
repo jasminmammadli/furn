@@ -1,0 +1,88 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding-right: 40px;
+  background-color: #f2e1d9;
+}
+.head-inp-sec {
+  display: none;
+}
+header nav {
+  display: none;
+}
+.head-logo-sec {
+  height: 100%;
+}
+.head-logo-sec img {
+  height: 100%;
+}
+.head-menu-sec svg {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 1200px) {
+  .head-menu-sec {
+    display: none;
+  }
+  .head-inp-sec {
+    display: flex;
+  }
+  header nav {
+    display: block !important;
+  }
+  .head-logo-sec {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .head-logo-sec img {
+    transform: scale(1.4);
+    z-index: 99999;
+    margin: 30px 0 0 20px;
+  }
+  .head-logo-sec nav a {
+    font: 600 14px "Poppins", sans-serif;
+    color: #1d2547;
+    text-transform: capitalize !important;
+    padding: 39px 15px;
+    transition: 0.5s;
+  }
+  .head-logo-sec nav a:hover {
+    color: #fd7e14;
+  }
+  .head-inp-sec{
+    display: flex;
+    align-items: center;
+  }
+  .head-inp-sec .inp-box {
+    border-bottom: 1px solid #c2b6bb;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+  }
+  .head-inp-sec .inp-box input {
+    border: 0;
+    background-color: transparent;
+    padding: 5px 85px 5px 5px;
+    font: 400 15px "Poppins", sans-serif;
+    color: #010a44;
+
+  }
+  .head-inp-sec .inp-box input::placeholder {
+    font: 400 15px "Poppins", sans-serif;
+    color: #010a44;
+  }
+  .head-inp-sec .inp-box svg {
+    font-size: 20px;
+  }
+  .head-account{
+    font: 600 16px "Poppins", sans-serif;
+color: #010a44;
+margin: 0 45px;
+  }
+  .head-inp-sec .shopbag{
+    font-size: 30px;
+  }
+}

@@ -1,12 +1,14 @@
-import React from 'react'
-import "./App.css"
-import Footer from './components/common/footer/Footer'
+import React from "react";
+import "./App.css";
+import Footer from "./components/common/footer/Footer";
+import Header from "./components/common/header/Header";
 function App() {
   return (
-    <div>
-      <Footer/>
-    </div>
-  )
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
