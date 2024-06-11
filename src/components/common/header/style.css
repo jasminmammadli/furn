@@ -40,7 +40,7 @@ header nav {
   font: 900 50px "Poppins", sans-serif;
   color: #fff;
   margin-bottom: 14px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .other-path span {
   text-transform: capitalize;
