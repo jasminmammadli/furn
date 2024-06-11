@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       {pathname !== "/login" && <Header />}
-      <main style={{ padding: "100px" }}>
-        <Routing />
+      <main>
+        {/* <Routing /> */}
       </main>
 
       {pathname !== "/login" && <Footer />}

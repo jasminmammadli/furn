@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +21,95 @@ header nav {
 .head-menu-sec svg {
   width: 40px;
   height: 40px;
+}
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+}
+.head-breadcrumb {
+  display: flex;
+  align-items: center;
+}
+.head-breadcrumb > * {
+  color: #fff;
+}
+.other-path h1 {
+  font: 900 50px "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 14px;
+  text-transform: capitalize;
+}
+.other-path span {
+  text-transform: capitalize;
+}
+.hero-content {
+  max-width: 570px;
+  background-color: #fff;
+  padding: 39px 24px 55px 44px;
+  margin-left: -20px;
+}
+.hero-content span {
+  font: 600 26px "Poppins", sans-serif;
+  color: #7f85a8;
+  margin-bottom: 8px;
+}
+.hero-content h1 {
+  font: 800 35px/1.2 "Poppins", sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.hero-content p {
+  font: 400 18px/30px "Poppins", sans-serif;
+  color: #646d77;
+  margin-bottom: 25px;
+}
+.hero-content button {
+  font: 500 16px "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 25px;
+  background: #fd8f5f;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: none;
+}
+@media (min-width: 576px) {
+  .hero::after {
+    content: "";
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #f2e1d9;
+  }
+
+  .hero-content span {
+    font-size: 26px;
+  }
+  .hero-content h1 {
+    font-size: 70px;
+  }
+  .hero-content button {
+    padding: 14px 44px;
+  }
+  .crem-div{
+    width: 89%;
+    margin-left: 11%;
+    height: 40px;
+    background-color: #f2e1d9;
+  }
+}
+@media (min-width: 650px) {
+  .hero-content {
+    margin-left: 0;
+  }
+  .hero {
+    padding: 100px 0;
+  }
 }
 @media (min-width: 1200px) {
   .head-menu-sec {
@@ -52,7 +141,7 @@ header nav {
   .head-logo-sec nav a:hover {
     color: #fd7e14;
   }
-  .head-inp-sec{
+  .head-inp-sec {
     display: flex;
     align-items: center;
   }
@@ -68,7 +157,6 @@ header nav {
     padding: 5px 85px 5px 5px;
     font: 400 15px "Poppins", sans-serif;
     color: #010a44;
-
   }
   .head-inp-sec .inp-box input::placeholder {
     font: 400 15px "Poppins", sans-serif;
@@ -77,12 +165,15 @@ header nav {
   .head-inp-sec .inp-box svg {
     font-size: 20px;
   }
-  .head-account{
+  .head-account {
     font: 600 16px "Poppins", sans-serif;
-color: #010a44;
-margin: 0 45px;
+    color: #010a44;
+    margin: 0 45px;
   }
-  .head-inp-sec .shopbag{
+  .head-inp-sec .shopbag {
     font-size: 30px;
+  }
+  .crem-div{
+    height: 100px;
   }
 }
