@@ -11,7 +11,7 @@ function App() {
     <>
       {pathname !== "/login" && <Header />}
       <main>
-        {/* <Routing /> */}
+        <Routing />
       </main>
 
       {pathname !== "/login" && <Footer />}

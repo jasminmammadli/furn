@@ -1,0 +1,51 @@
+.pop-prod {
+  padding: 90px 0;
+}
+.pop-prod-head {
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 670px;
+}
+.pop-prod-head h2 {
+  font: 700 28px/1.2 "Poppins", sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pop-prod-head p {
+  color: #7f85a8;
+  font: 400 16px/1.6 "Poppins", sans-serif;
+  margin: 0 0 15px;
+}
+.pop-prod-nav{
+    margin: 0 0 35px;
+}
+.pop-prod-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+.pop-prod-nav nav button {
+  padding: 18px;
+  color: #010a44;
+  text-transform: capitalize;
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+.pop-prod-nav nav button.active {
+  color: #fd8f5f;
+  border-bottom: 2px solid #fd8f5f;
+}
+
+@media(min-width:576px){
+    .pop-prod-head h2 {
+        font-size: 36px;
+    }
+    .pop-prod-nav nav{
+        border-bottom: 2px solid #e7ebf2;
+    }
+}
