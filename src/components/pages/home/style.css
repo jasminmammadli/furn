@@ -17,8 +17,8 @@
   font: 400 16px/1.6 "Poppins", sans-serif;
   margin: 0 0 15px;
 }
-.pop-prod-nav{
-    margin: 0 0 35px;
+.pop-prod-nav {
+  margin: 0 0 35px;
 }
 .pop-prod-nav nav {
   display: flex;
@@ -40,12 +40,122 @@
   color: #fd8f5f;
   border-bottom: 2px solid #fd8f5f;
 }
+.pop-prods-wrapper {
+  padding: 0 0 50px;
+}
+.pop-prods-wrapper .card {
+  border: 1px solid #f6f8fe;
+}
+.pop-prods-wrapper .card-img img {
+  width: 100%;
+}
+.pop-prods-wrapper .card-content {
+  padding: 30px 15px;
+  text-align: center;
+  transform: 0.4s;
+}
+.pop-prods-wrapper .card-content h3 {
+  font: 500 20px/1.7 "Poppins", sans-serif;
+  margin: 0 0 20px;
+}
+.pop-prods-wrapper .card-content h3 a {
+  color: #1a1a1a;
+  transition: 0.4s;
+}
+.pop-prods-wrapper .card-content span {
+  color: #670000;
+  font: 600 20px/1.7 "Poppins", sans-serif;
+}
+.pop-prods-wrapper .card:hover .card-content h3 a {
+  text-decoration: underline;
+}
+.furniture-details {
+  background-color: #f2e1d9;
+}
+.furniture-details .furniture-img {
+  background-image: url(./../../../assets/furniture-detail.jpg);
+  height: 500px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.furniture-details .furniture-detail-content {
+  padding: 50px 30px;
+}
+.furniture-details .furniture-detail-content h2 {
+  font: 700 50px/1.2 "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+.furniture-details .furniture-detail-content p {
+  font: 400 14px/1.7 "Poppins", sans-serif;
+  color: #010a44;
+  margin: 0 0 15px;
+}
+.furniture-details .furniture-detail-content p.last-p {
+  margin: 0 0 40px !important;
+}
+.furniture-details .furniture-detail-content button {
+  color: #fff;
+  background-color: #fd8f5f;
+  border: none;
+  text-transform: uppercase;
+  padding: 20px 44px;
+  font: 500 15px/1.2 "Poppins", sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+}
+.furniture-details .furniture-detail-content button::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: .4s;
+  width: 0%;
+}
+.furniture-details .furniture-detail-content button:hover::before{
+  background-color: rgba(0, 0, 0, 0.1);
+  inset: 0;
+  width: 100%;
+}
 
-@media(min-width:576px){
-    .pop-prod-head h2 {
-        font-size: 36px;
-    }
-    .pop-prod-nav nav{
-        border-bottom: 2px solid #e7ebf2;
-    }
+@media (min-width: 576px) {
+  .pop-prod-head h2 {
+    font-size: 36px;
+  }
+  .pop-prod-nav nav {
+    border-bottom: 2px solid #e7ebf2;
+  }
+  .pop-prods-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .pop-prods-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .furniture-details {
+    display: flex;
+    align-items: center;
+  }
+  .furniture-details .furniture-img {
+    width: 50%;
+  }
+  .furniture-details .furniture-detail-content {
+    width: 40%;
+    padding: 0 20px 0 50px;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .furniture-details .furniture-img {
+    width: 55%;
+  }
+  .furniture-details .furniture-detail-content {
+    width: 45%;
+  }
 }
