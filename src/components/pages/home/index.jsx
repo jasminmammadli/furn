@@ -3,6 +3,7 @@ import "./style.css";
 import MainContextProvider from "../../../context/DataContext";
 import DataContext from "../../../context/DataContext";
 import { Link } from "react-router-dom";
+import CardItem from "../../ui/cardItem";
 function Home() {
   let [buttons, setButtons] = useState([
     "sofa",
@@ -42,17 +43,7 @@ function Home() {
           <div className="pop-prods-wrapper">
             {productData &&
               productData.slice(0, 3).map((item) => (
-                <div className="card" key={item.id}>
-                  <div className="card-img">
-                    <img src={item.imgUrl} alt="" />
-                  </div>
-                  <div className="card-content">
-                    <h3>
-                      <Link to={"/product"}>{item.title}</Link>
-                    </h3>
-                    <span>${item.price}</span>
-                  </div>
-                </div>
+                <CardItem key={item.id} {...item}/>
               ))}
           </div>
         </div>
@@ -73,7 +64,20 @@ function Home() {
         </div>
       </section>
       <section className="may-like">
-        <div className="may-like-head"></div>
+        <div className="container">
+          <div className="may-like-head">
+            <h2>products you may like</h2>
+            <p>
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla.
+            </p>
+          </div>
+          <div className="may-like-wrapper">
+            {
+              productData && productData.slice(3,6).map(item=><CardItem key={item.id} {...item}/>)
+            }
+          </div>
+        </div>
       </section>
     </div>
   );

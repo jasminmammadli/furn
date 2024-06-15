@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid #f6f8fe;
+}
+.card-img img {
+  width: 100%;
+}
+.card-content {
+  padding: 30px 15px;
+  text-align: center;
+  transform: 0.4s;
+}
+.card-content h3 {
+  font: 500 20px/1.7 "Poppins", sans-serif;
+  margin: 0 0 20px;
+}
+.card-content h3 a {
+  color: #1a1a1a;
+  transition: 0.4s;
+}
+.card-content span {
+  color: #670000;
+  font: 600 20px/1.7 "Poppins", sans-serif;
+}
+.card:hover .card-content h3 a {
+  text-decoration: underline;
+}
