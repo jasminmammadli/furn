@@ -77,6 +77,29 @@ function Home() {
               productData && productData.slice(3,6).map(item=><CardItem key={item.id} {...item}/>)
             }
           </div>
+          <div className="may-like-btn">
+            <Link to={'/product'}>discover more</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="top-pick">
+        <div className="container">
+          <div className="top-pick-head">
+            <h2>products you may like</h2>
+            <p>
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla.
+            </p>
+          </div>
+          <div className="top-pick-wrapper">
+            {
+              productData && productData.slice(6).map(item=><CardItem key={item.id} {...item}/>)
+            }
+          </div>
+          <div className="top-pick-btn">
+            <Link to={'/product'}>discover more</Link>
+          </div>
         </div>
       </section>
     </div>

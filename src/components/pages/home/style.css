@@ -88,32 +88,69 @@
   bottom: 0;
   transition: .4s;
   width: 0%;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 .furniture-details .furniture-detail-content button:hover::before{
   background-color: rgba(0, 0, 0, 0.1);
   inset: 0;
   width: 100%;
 }
-.may-like{
+.may-like,.top-pick{
   padding: 70px 0;
 }
-.may-like-head{
+.may-like-head,.top-pick-head{
   max-width: 570px;
   text-align: center;
   margin: 0 auto 60px;
 }
-.may-like-head h2{
+.may-like-head h2,.top-pick-head h2{
   font: 700 36px/1.2 "Poppins", sans-serif;
 margin:  0 0 20px;
 text-transform: uppercase;
 color: #1a1a1a;
 }
-.may-like-head p{
+.may-like-head p,.top-pick-head p{
   font: 400 16px/1.6 "Poppins", sans-serif;
   color: #7F85A8;
   margin: 0 0 15px;
 }
-
+.may-like-btn,.top-pick-btn{
+  margin: 60px 0 0;
+  text-align: center;
+}
+.may-like-btn a, .top-pick-btn a{
+  color: #fd8f5f;
+  background-color: #fff;
+  border: 1px solid #fd8f5f !important;
+  border: none;
+  text-transform: uppercase;
+  padding: 20px 44px;
+  font: 500 15px/1.2 "Poppins", sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  transition: .4s;
+  z-index: 99;
+}
+.may-like-btn a::before, .top-pick-btn a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: .4s;
+  height: 0%;
+  background-color: #f74a00b7;
+  z-index: -5;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.may-like-btn a:hover, .top-pick-btn a:hover{
+   color: #fff; 
+}
+.may-like a:hover::before, .top-pick a:hover::before{
+  height: 100%;
+  color: #fff !important;
+}
 @media (min-width: 576px) {
   .pop-prod-head h2 {
     font-size: 36px;
@@ -121,7 +158,7 @@ color: #1a1a1a;
   .pop-prod-nav nav {
     border-bottom: 2px solid #e7ebf2;
   }
-  .pop-prods-wrapper,.may-like-wrapper {
+  .pop-prods-wrapper,.may-like-wrapper, .top-pick-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -134,7 +171,7 @@ color: #1a1a1a;
   }
 }
 @media (min-width: 992px) {
-  .pop-prods-wrapper,.may-like-wrapper {
+  .pop-prods-wrapper,.may-like-wrapper, .top-pick-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
   .furniture-details {
