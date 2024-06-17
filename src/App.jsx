@@ -11,8 +11,8 @@ function App() {
   const [productData,setProductData]=useState(null)
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
-      .then((res) => {setProductData(res.data),console.log(res.data)})
+      .get("https://raw.githubusercontent.com/jasminmammadli/furndata/master/data.json")
+      .then((res) => {setProductData(res.data.products),console.log(res.data.products)})
       .catch(err=>console.log(err))
   }, []);
 

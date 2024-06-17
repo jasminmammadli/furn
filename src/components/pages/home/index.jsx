@@ -1,12 +1,9 @@
 import React, { useContext, useState } from "react";
 import "./style.css";
 import DataContext from "../../../context/DataContext";
-import { Link } from "react-router-dom";
 import CardItem from "../../ui/cardItem";
-import { FaInstagram } from "react-icons/fa";
-import InstaImage1 from "./../../../assets/instra1.jpg"
-import InstaImage2 from "./../../../assets/instra2.jpg"
 import ButtonVertical from "../../ui/buttonVetical";
+import Inspired from "../../ui/inspired";
 function Home() {
   let [buttons, setButtons] = useState([
     "sofa",
@@ -86,23 +83,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="inspired">
-        <div className="inspired-content">
-          <FaInstagram className="insta-icon" />
-          <h2>get inspired with instagram</h2>
-          <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
-          <ButtonVertical path='/product' title='discover more'/>
-        </div>
-        <div className="inspired-image">
-          <div className="instra-image">
-            <img src={InstaImage1} alt="" />
-          </div>
-          <div className="instra-image">
-            <img src={InstaImage2} alt="" />
-          </div>
-
-        </div>
-      </section>
+      <Inspired/>
 
       <section className="top-pick">
         <div className="container">

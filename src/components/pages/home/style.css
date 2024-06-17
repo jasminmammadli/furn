@@ -123,31 +123,6 @@
   margin: 60px 0 0;
   text-align: center;
 }
-.inspired {
-  padding: 30px 15px;
-}
-.instra-image img {
-  width: 100%;
-}
-.insta-icon {
-  font-size: 70px;
-  color: #fd8f5f;
-  margin: 0 0 30px;
-}
-.inspired-content{
-  margin: 0 0 40px;
-}
-.inspired-content h2 {
-  font: 700 28px/1.2 "Poppins", sans-serif;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  margin: 0 0 20px;
-}
-.inspired-content p {
-  font: 400 16px/1.6 "Poppins", sans-serif;
-  color: #7f85a8;
-  margin: 0 0 35px;
-}
 @media (min-width: 576px) {
   .pop-prod-head h2 {
     font-size: 36px;
