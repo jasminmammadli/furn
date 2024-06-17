@@ -1,0 +1,33 @@
+.btn-vrtcl {
+  color: #fd8f5f;
+  background-color: #fff;
+  border: 1px solid #fd8f5f !important;
+  border: none;
+  text-transform: uppercase;
+  padding: 20px 44px;
+  font: 500 15px/1.2 "Poppins", sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  transition: 0.4s;
+  z-index: 99;
+}
+.btn-vrtcl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 0.4s;
+  height: 0%;
+  background-color: #f74a00b7;
+  z-index: -5;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn-vrtcl:hover {
+  color: #fff;
+}
+.btn-vrtcl:hover::before {
+  height: 100%;
+  color: #fff !important;
+}
