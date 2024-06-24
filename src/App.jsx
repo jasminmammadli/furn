@@ -6,6 +6,7 @@ import Routing from "./Routing/Routing";
 import { useLocation } from "react-router-dom";
 import DataContext from "./context/DataContext";
 import axios from "axios";
+import FooterOverSection from "./components/ui/footerOver";
 function App() {
   const { pathname } = useLocation();
   const [productData,setProductData]=useState(null)
@@ -23,7 +24,11 @@ function App() {
         <Routing />
       </main>
 
-      {pathname !== "/login" && <Footer />}
+      {pathname !== "/login" && <>
+      <FooterOverSection/>
+      <Footer />
+      </>
+      }
     </DataContext.Provider>
   );
 }
