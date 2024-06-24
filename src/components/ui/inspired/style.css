@@ -23,32 +23,59 @@
   color: #7f85a8;
   margin: 0 0 35px;
 }
-@media(min-width:576px){
-  .inspired-image{
+.instra-image {
+  position: relative;
+  overflow: hidden;
+}
+.instra-image .abs {
+  position: absolute;
+  /* inset: 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 7px;
+  display: grid;
+  place-items: center;
+  transition: .5s;
+}
+.instra-image:hover .abs{
+  background-color: hsla(232, 97%, 14%, 0.3);
+}
+.instra-image .abs svg{
+  color: transparent;
+  transition: .3s;
+
+}
+.instra-image:hover .abs svg {
+  fill: #fff;
+  font-size: 30px;
+}
+@media (min-width: 576px) {
+  .inspired-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media(min-width:768px){
-  .inspired{
+@media (min-width: 768px) {
+  .inspired {
     display: flex;
     flex-direction: column;
   }
-  .inspired-content{
+  .inspired-content {
     width: 50%;
   }
 }
-@media(min-width:1200px){
-  .inspired{
+@media (min-width: 1200px) {
+  .inspired {
     flex-direction: row;
     align-items: center;
     padding: 30px 15px 20px 45px;
   }
-  .inspired-content{
-    width: 40%;
+  .inspired-content {
+    width: 30%;
     padding: 0 20px;
   }
-  .inspired-image{
-    width: 60%;
+  .inspired-image {
+    width: 70%;
   }
 }

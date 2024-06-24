@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { FaInstagram } from "react-icons/fa";
+import { TfiInstagram } from "react-icons/tfi";
 import InstaImage1 from "./../../../assets/instra1.jpg"
 import InstaImage2 from "./../../../assets/instra2.jpg"
 import ButtonVertical from "../buttonVetical";
@@ -19,9 +20,15 @@ function Inspired() {
       <div className="inspired-image">
         <div className="instra-image">
           <img src={InstaImage1} alt="" />
+          <div className="abs">
+          <TfiInstagram />
+          </div>
         </div>
         <div className="instra-image">
           <img src={InstaImage2} alt="" />
+          <div className="abs">
+          <TfiInstagram />
+          </div>
         </div>
       </div>
     </section>
